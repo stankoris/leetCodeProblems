@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     function isPalindrome(x) {
+        let stringNumber = x.toString();
+        let first = 0;
+        let last = stringNumber.length - 1;
+
+        while (first < last) {
+            console.log(stringNumber);
+        if (stringNumber[first] !== stringNumber[last]) {
+            return false;
+        }
+        first++;
+        last--;
+    }
+    console.log(stringNumber);
+    return true;
+    }
+
+        let number = 1234567887654321;
+
+        console.log(isPalindrome(number));
+    </script>
+</body>
+</html>
