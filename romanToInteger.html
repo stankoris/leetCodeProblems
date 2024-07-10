@@ -24,16 +24,18 @@ function romanToInteger(s) {
         let currentCharValue = roman[s[i]];
         let nextCharValue = roman[s[i + 1]];
 
-        // If the current character value is less than the next one, subtract it
         if (currentCharValue < nextCharValue) {
             result -= currentCharValue;
         } else {
             result += currentCharValue;
         }
     }
-    
+
     return result;
 }
+
+let s = "MCMXCIV"
+console.log(romanToInteger(s));
     </script>
 </body>
 </html>
